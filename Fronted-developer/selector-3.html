@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: cornflowerblue;
+            font-size: 2.5em;
+        }
+        p::before {
+            content: "😐";
+        }
+        p::after {
+            content: "🔎";
+        }
+        p::first-letter {
+            color: chocolate;
+        }
+        p:hover {
+            color: red;
+        }
+        div p:hover:nth-child(3) {
+            color: black;
+        }
+        ::placeholder {
+            color: tomato;
+        }
+    </style>
+<body>
+</head>
+    <p>Hello</p>
+    <div>
+        <p>comida</p>
+        <p>pieza</p>
+        <p>punto</p>
+    </div>
+    <label for="text">Write your name</label>
+    <input type="text" placeholder="Name">
+</body>
+</html>
